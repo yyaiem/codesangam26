@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔹 Open Graph (WhatsApp, Discord, LinkedIn, Facebook) -->
+    <meta property="og:title" content="Be Our Contributor | Code Sangam 2026">
+    <meta property="og:description"
+        content="Join the open-source revolution by YantraYodha. Learn. Build. Contribute. Lead. Become part of Code Sangam 2026 and level up your coding journey.">
+    <meta property="og:image" content="../assets/join.png">
+    <!-- 🔸 Replace with your banner URL -->
+    <meta property="og:url" content="../assets/join.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="YantraYodha | Code Sangam 2026">
+
+    <!-- 🔹 Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Join Code Sangam 2026 | Be Our Contributor">
+    <meta name="twitter:description"
+        content="Contribute to open-source projects, gain real-world experience, and grow as a developer with YantraYodha’s Code Sangam 2026.">
+    <meta name="twitter:image" content="../assets/join.png">
+
+
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/yyaiem/yy/refs/heads/main/site_files/favicon.ico"
+        type="image/x-icon">
+    <title>Be Our Contributor - Code Sangam</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/jetbrains-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+    </style>
+</head>
+
+
+
+<body>
+
+    <section>
+        <div id="menu">
+            <div style="margin: 6%">
+                <div>
+                    <button
+                        style="background-color: #cfcfcf; color: crimson; border-radius: 100%; padding: 4px; outline: none; border: none; height: 30px; width: 30px; font-weight: bold; font-size: 38px; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0;"
+                        id="closemenu">
+                        <!-- <i class="ri-close-large-line"></i> -->
+                        <i class="ri-close-circle-fill"></i>
+                    </button>
+                </div>
+                <div
+                    style="background-color: rgba(255, 255, 255, 0); padding: 20px; display: flex; align-items: center;">
+                    <ul id="navmenu">
+
+                        <li>
+                            <a href="../join/index.html">
+                                <h4>Join</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../community/index.html">
+                                <h4>Community</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../organizers/index.html">
+                                <h4>Organizers</h4>
+                            </a>
+                        </li>
+                        <li style="text-decoration: none;">
+                            <a href="../contact/index.html">
+                                <h4>Contact</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <header
+        style="display: block; top: 0; left: 0; background-color: #ffffff10; position: sticky;  backdrop-filter: blur(4px); z-index: 10; top: 0;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; margin: 0px 4px;">
+            <div>
+                <a href="../index.html">
+
+                    <img src="https://raw.githubusercontent.com/yyaiem/yy/refs/heads/main/site_files/transparent%20YY%20logo.png"
+                        alt="YY LOGO" srcset="" style="width: 32px;">
+                </a>
+            </div>
+            <div>
+                <button style="background: none; outline: none; border: none; cursor: pointer; " id="menuBtn">
+                    <i class="ri-menu-3-line"
+                        style="font-size: 28px; color: #CFCFCF; font-family: 'JetBrains Mono', sans-serif;"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main style="height: 60dvh; width: 100dvw; ">
+
+        <div
+            style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+
+            <div style="margin: 8px; height: 20%;" id="formdiv">
+                <div>
+                    <h1>
+                        Register for C<span style="color: crimson;">o</span>de Sangam 2026
+                    </h1>
+                    <hr style="width: 90%; height: 2px; background-color: crimson; border: none; outline: none;">
+                </div>
+                <div>
+                    <form id="regform" style="width: 100%; overflow: hidden;">
+                        <div>
+                            <label for="memId" style="margin: 10px; font-size: 20px;">Enter your YantraYodha Member
+                                ID</label>
+                            <div
+                                style="margin: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
+                                <input type="text" name="memId" id="idInp"
+                                    style="font-size: 28px; padding: 8px; background-color: #ffffff18; border: solid; border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255);">
+                            </div>
+                        </div>
+                        <div
+                            style="margin: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
+                            <button type="submit"
+                                style=" font-size: 18px; padding: 8px; background-color: #ffffff18; border: solid;
+                                border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255);">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div id="loadingScr" style="display: none; ">
+                Loading...
+            </div>
+
+
+            <div id="msgBox" style="display: none;">
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer
+        style="width: 100%; height: 70dvh; background-color: #ffffff00; position: relative; overflow: hidden; bottom: 0;">
+        <div
+            style="width: 100%; height: 50%; rotate: 4deg; background-color: #414141; position: absolute; bottom: 0; left: 0; scale: 2;">
+
+        </div>
+        <div
+            style="width: 100%; height: 50%; background-color: #414141; position:absolute; bottom: 0; left: 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div>
+
+                <p>
+                    &copy; 2025 YantraYodha
+                </p>
+                <div
+                    style="display: flex; align-items: center; justify-content: center; padding: 4px; background-color: #ffffff09; border-radius: 10px;">
+                    <img src="https://github.com/raxku2.png" style="border-radius: 100%; height: 32px; margin: 4px;"
+                        alt="">
+                    <p>
+                        Pinaka
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <section></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../script.js"></script>
+    <script>
+
+        const API_URL = "https://code-sangam-api-2026.vercel.app/"
+        document.getElementById("regform").addEventListener("submit", async e => {
+            e.preventDefault()
+
+            let mID = document.getElementById('idInp').value
+            // console.log(mID);
+
+            document.getElementById("formdiv").style.display = 'none'
+            loading()
+            res = await fetch(`${API_URL}reg`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    memberId: mID
+                })
+            })
+            response = await res.json()
+            let data = (JSON.stringify(response));
+            if (res) {
+                noloading()
+                msg(data)
+            } else {
+                noloading()
+                msg("Error!! Try Again")
+            }
+
+
+        })
+    </script>
+</body>
+
+</html>

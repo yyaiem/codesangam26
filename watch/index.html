@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/yyaiem/yy/refs/heads/main/site_files/favicon.ico"
+        type="image/x-icon">
+    <title>Be Our Contributor - Code Sangam</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/jetbrains-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+    </style>
+</head>
+
+
+
+<body>
+
+    <section>
+        <div id="menu">
+            <div style="margin: 6%">
+                <div>
+                    <button
+                        style="background-color: #cfcfcf; color: crimson; border-radius: 100%; padding: 4px; outline: none; border: none; height: 30px; width: 30px; font-weight: bold; font-size: 38px; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0;"
+                        id="closemenu">
+                        <!-- <i class="ri-close-large-line"></i> -->
+                        <i class="ri-close-circle-fill"></i>
+                    </button>
+                </div>
+                <div
+                    style="background-color: rgba(255, 255, 255, 0); padding: 20px; display: flex; align-items: center;">
+                    <ul id="navmenu">
+
+                        <li>
+                            <a href="../join/index.html">
+                                <h4>Join</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../community/index.html">
+                                <h4>Community</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../organizers/index.html">
+                                <h4>Organizers</h4>
+                            </a>
+                        </li>
+                        <li style="text-decoration: none;">
+                            <a href="../contact/index.html">
+                                <h4>Contact</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <header
+        style="display: block; top: 0; left: 0; background-color: #ffffff10; position: sticky;  backdrop-filter: blur(4px); z-index: 10; top: 0;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; margin: 0px 4px;">
+            <div>
+                <a href="../index.html">
+
+                    <img src="https://raw.githubusercontent.com/yyaiem/yy/refs/heads/main/site_files/transparent%20YY%20logo.png"
+                        alt="YY LOGO" srcset="" style="width: 32px;">
+                </a>
+            </div>
+            <div>
+                <button style="background: none; outline: none; border: none; cursor: pointer; " id="menuBtn">
+                    <i class="ri-menu-3-line"
+                        style="font-size: 28px; color: #CFCFCF; font-family: 'JetBrains Mono', sans-serif;"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main style=" width: 100dvw; overflow: hidden;">
+
+        <div style="height: 60dvh; width: 100%;" id="parentdivi">
+            <div
+                style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+
+                <div style="margin: 8px; height: 20%;" id="formdiv">
+                    <div>
+                        <h1>
+                            Participent<span style="color: crimson;">s</span>of Code Sangam 2026
+                        </h1>
+                        <hr style="width: 90%; height: 2px; background-color: crimson; border: none; outline: none;">
+                    </div>
+                    <div>
+                        <form id="viewform" style="width: 100%; overflow: hidden;">
+                            <div>
+                                <label for="passwd" style="margin: 10px; font-size: 20px;">Enter DB Password</label>
+                                <div
+                                    style="margin: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
+                                    <input type="text" name="passwd" id="passInp"
+                                        style="font-size: 28px; padding: 8px; background-color: #ffffff18; border: solid; border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255);">
+                                </div>
+                            </div>
+                            <div
+                                style="margin: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
+                                <button type="submit"
+                                    style=" font-size: 18px; padding: 8px; background-color: #ffffff18; border: solid;
+                                border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255);">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div id="loadingScr" style="display: none;">
+                    Loading...
+                </div>
+
+                <div id="msgBox" style="display: none;">
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="memberContainer" style="overflow: scroll; z-index: 20;"></div>
+
+    </main>
+
+    <footer style="width: 100%; height: 70dvh; position: relative; overflow: hidden; bottom: 0; z-index: 200;">
+        <div
+            style="width: 100%; height: 50%; rotate: 4deg; background-color: #414141; position: absolute; bottom: 0; left: 0; scale: 2;">
+
+        </div>
+        <div
+            style="width: 100%; height: 50%; background-color: #414141; position:absolute; bottom: 0; left: 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div>
+
+                <p>
+                    &copy; 2025 YantraYodha
+                </p>
+                <div
+                    style="display: flex; align-items: center; justify-content: center; padding: 4px; background-color: #ffffff09; border-radius: 10px;">
+                    <img src="https://github.com/raxku2.png" style="border-radius: 100%; height: 32px; margin: 4px;"
+                        alt="">
+                    <p>
+                        Pinaka
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <section></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../script.js"></script>
+    <script>
+
+        function showMemberData(dataArray, targetDivId) {
+            const container = document.getElementById(targetDivId);
+            if (!container) return console.error("Div not found:", targetDivId);
+
+            container.innerHTML = `
+    <style>
+      :root {
+        --bg-dark: #121212;
+        --card-dark: #1e1e1e;
+        --border-dark: #2b2b2b;
+        --text-light: #e0e0e0;
+        --text-dim: #aaaaaa;
+        --accent-blue: #4aa3ff;
+        --accent-pink: #ff79c6;
+      }
+      
+      .member-wrapper {
+        background: var(--card-dark);
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        width: 96%;
+      }
+      #searchInput {
+        width: 90%;
+        padding: 8px 10px;
+        margin-bottom: 12px;
+        border: 1px solid var(--border-dark);
+        border-radius: 8px;
+        background: #181818;
+        color: var(--text-light);
+      }
+      #searchInput::placeholder { color: var(--text-dim); }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow-x: auto;
+      }
+      th, td {
+        padding: 10px 8px;
+        text-align: left;
+        border-bottom: 1px solid var(--border-dark);
+        font-size: 0.9rem;
+      }
+      th {
+        background: #222;
+        color: var(--accent-blue);
+        position: sticky;
+        top: 0;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.03em;
+      }
+      tr:hover { background: rgba(255,255,255,0.05); transition: 0.2s; }
+      #stats {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        text-align: right;
+        color: var(--text-dim);
+      }
+      @media (max-width: 768px) {
+        table, th, td { font-size: 0.8rem; }
+        #stats { text-align: left; }
+      }
+    </style>
+
+    <div class="member-wrapper">
+      <input type="text" id="searchInput" placeholder="🔍 Search by name, email, or department">
+      <div id="stats"></div>
+      <div style="overflow-x:auto;">
+        <table id="memberTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Contact</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Program</th>
+              <th>Department</th>
+              <th>Passout</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <canvas id="genderChart" height="100"></canvas>
+    </div>
+  `;
+
+            const tbody = container.querySelector("#memberTable tbody");
+            const searchInput = container.querySelector("#searchInput");
+            const statsBox = container.querySelector("#stats");
+            const chartCanvas = container.querySelector("#genderChart");
+
+            // Render table rows
+            function renderTable(data) {
+                tbody.innerHTML = "";
+                data.forEach(d => {
+                    const i = d.data;
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+        <td>${i.fullName?.trim() || "-"}</td>
+        <td>${i.gender || "-"}</td>
+        <td>${i.contactNumber || "-"}</td>
+        <td>${i.emailAddress || "-"}</td>
+        <td>${i.residentialAddress || "-"}</td>
+        <td>${i.enrolledProgram || "-"}</td>
+        <td>${i.department || "-"}</td>
+        <td>${i.yearOfPassout || "-"}</td>
+      `;
+                    tbody.appendChild(row);
+                });
+                updateStats(data);
+            }
+
+            // Live search
+            searchInput.addEventListener("input", e => {
+                const term = e.target.value.toLowerCase();
+                const filtered = dataArray.filter(d => {
+                    const i = d.data;
+                    return (
+                        d.memID.toLowerCase().includes(term) ||
+                        i.fullName.toLowerCase().includes(term) ||
+                        i.emailAddress.toLowerCase().includes(term) ||
+                        i.department.toLowerCase().includes(term)
+                    );
+                });
+                renderTable(filtered);
+            });
+
+            // Stats + gender chart
+            function updateStats(data) {
+                const total = data.length;
+                const male = data.filter(d => (d.data.gender || "").toLowerCase().startsWith("m")).length;
+                const female = data.filter(d => (d.data.gender || "").toLowerCase().startsWith("f")).length;
+                statsBox.innerHTML = `<strong>Total:</strong> ${total} | 👩 Female: ${female} | 👨 Male: ${male}`;
+
+                if (window.genderChart) window.genderChart.destroy();
+                window.genderChart = new Chart(chartCanvas, {
+                    type: "doughnut",
+                    data: {
+                        labels: ["Female", "Male"],
+                        datasets: [{
+                            data: [female, male],
+                            backgroundColor: ["#ff79c6", "#4aa3ff"],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        plugins: {
+                            legend: { position: "bottom", labels: { color: "#ddd" } }
+                        }
+                    }
+                });
+            }
+
+            renderTable(dataArray);
+        }
+
+
+
+        const API_URL = "https://code-sangam-api-2026.vercel.app/"
+        document.addEventListener("DOMContentLoaded", () => {
+
+            document.getElementById("viewform").addEventListener("submit", async e => {
+                e.preventDefault()
+
+                let passwd = document.getElementById('passInp').value
+
+                document.getElementById("formdiv").style.display = 'none'
+                loading()
+                res = await fetch(`${API_URL}watch`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        passwd: passwd
+                    })
+                })
+                if (res) {
+                    response = await res.json()
+                    let data = (response);
+                    noloading()
+                    // console.log(data);
+                    if (data.length > 0) {
+                        
+                        document.getElementById("parentdivi").style.display = 'none'
+                        showMemberData(data, "memberContainer");
+                    }else{
+                        msg("No one has participated yet.")
+                    }
+
+
+                    // msg(data)
+                } else {
+                    noloading()
+                    msg("Error!! Try Again")
+                }
+
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>
