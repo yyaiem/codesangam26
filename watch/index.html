@@ -354,9 +354,12 @@
                     noloading()
                     // console.log(data);
                     if (data.length > 0) {
-                        
-                        document.getElementById("parentdivi").style.display = 'none'
-                        showMemberData(data, "memberContainer");
+                        if (typeof data === "object" && data !== null) {
+                            document.getElementById("parentdivi").style.display = 'none'
+                            showMemberData(data, "memberContainer");
+                        } else {
+                            msg(data)
+                        }
                     }else{
                         msg("No one has participated yet.")
                     }
