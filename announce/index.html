@@ -41,7 +41,7 @@
     </style>
 </head>
 
-<body >
+<body>
 
     <section>
         <div id="menu">
@@ -168,6 +168,32 @@
     <script src="../script.js"></script>
     <script>
         // window.location.replace("");
+        document.addEventListener("DOMContentLoaded", () => {
+            // === CONFIGURATION ===
+            
+            const meetUrl = "https://meet.google.com/psg-tuhz-rqb";  
+            const startTime = new Date("2025-11-01T19:45:00"); 
+            const endTime = new Date("2025-11-01T20:20:00");
+
+            function checkRedirect() {
+                const now = new Date();
+
+                if (now >= startTime && now <= endTime) {
+                    // Between 7:45 and 8:20 → redirect to Google Meet
+                    window.location.href = meetUrl;
+                } else if (now > endTime) {
+                    // After 8:20 → redirect to home
+                    window.location.href = "/";
+                }
+                // Before 7:45 → do nothing
+            }
+
+            // Check immediately on load
+            checkRedirect();
+
+            // Keep checking every minute (in case page is left open)
+            setInterval(checkRedirect, 60000);
+        });
     </script>
 
 </body>
