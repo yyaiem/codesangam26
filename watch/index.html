@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/yyaiem/yy/refs/heads/main/site_files/favicon.ico"
         type="image/x-icon">
-    <title>Be Our Contributor - Code Sangam</title>
+    <title>Hi! Admin - Code Sangam</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/jetbrains-mono" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
@@ -99,7 +99,7 @@
                                 <label for="passwd" style="margin: 10px; font-size: 20px;">Enter DB Password</label>
                                 <div
                                     style="margin: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
-                                    <input type="text" name="passwd" id="passInp"
+                                    <input type="password" name="passwd" id="passInp"
                                         style="font-size: 28px; padding: 8px; background-color: #ffffff18; border: solid; border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255);">
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                 style="margin: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
                                 <button type="submit"
                                     style=" font-size: 18px; padding: 8px; background-color: #ffffff18; border: solid;
-                                border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255);">Submit</button>
+                                border-color: crimson; border-radius: 10px; outline: none; color: rgb(255, 255, 255); cursor: pointer;">Submit</button>
                             </div>
 
                         </form>
@@ -352,7 +352,6 @@
                     response = await res.json()
                     let data = (response);
                     noloading()
-                    // console.log(data);
                     if (data.length > 0) {
                         if (typeof data === "object" && data !== null) {
                             document.getElementById("parentdivi").style.display = 'none'
@@ -360,12 +359,9 @@
                         } else {
                             msg(data)
                         }
-                    }else{
+                    } else {
                         msg("No one has participated yet.")
                     }
-
-
-                    // msg(data)
                 } else {
                     noloading()
                     msg("Error!! Try Again")
